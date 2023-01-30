@@ -35,13 +35,11 @@ public class Main {
         int[] arr = generateRandomArray();
         System.out.println(Arrays.toString(arr));
         int max = 0;
+        int min = 200_000;
         for (final int current : arr) {
             if (current > max) {
                 max = current;
             }
-        }
-        int min = 200_000;
-        for (final int current : arr) {
             if (current < min) {
                 min = current;
             }
